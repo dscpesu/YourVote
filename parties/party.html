@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parties</title>
+  <link rel="stylesheet" type="text/css" href="party.css">
+</head>
+
+<body>
+<h1>Parties In Your Locality</h1>
+<br/><br/><br/>
+
+<div class="buttons">
+<button class="button" onclick="f1()" style="vertical-align:middle"><span>All</span></button>
+<button class="button" onclick="f2()" style="vertical-align:middle"><span>Majority</span></button>
+<button class="button" onclick="f3()" style="vertical-align:middle"><span>Minority</span></button>
+<button class="button" onclick="f4()" style="vertical-align:middle"><span>Promising</span></button>
+<button class="button" onclick="f5()" style="vertical-align:middle"><span>Ruling</span></button>
+</div>
+<br/>
+<div class="gallery" id="1">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party1.png" alt="party1" width="600" height="400">
+  </a>
+  <div class="desc">Party A</div>
+</div>
+
+<div class="gallery" id="2">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party2.png" alt="Party 2" width="600" height="400">
+  </a>
+  <div class="desc">Party B</div>
+</div>
+
+<div class="gallery" id="3">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party3.png" alt="party3" width="600" height="400">
+  </a>
+  <div class="desc">Party C</div>
+</div>
+
+<div class="gallery" id="4">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party4.png" alt="party4" width="600" height="400">
+  </a>
+  <div class="desc">Party D</div>
+</div>
+
+<div class="gallery" id="5">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party5.png" alt="party5" width="600" height="400">
+  </a>
+  <div class="desc">Party E</div>
+</div>
+
+<div class="gallery" id="6">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party6.png" alt="party6" width="600" height="400">
+  </a>
+  <div class="desc">Party F</div>
+</div>
+
+<div class="gallery" id="7">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party7.png" alt="party7" width="600" height="400">
+  </a>
+  <div class="desc">Party G</div>
+</div>
+
+<div class="gallery" id="8">
+  <a target="_blank" href="C:/Users/prash/Desktop/election/candidates/candidate.html">
+    <img src="party8.png" alt="party8" width="600" height="400">
+  </a>
+  <div class="desc">Party H</div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+var x = document.querySelectorAll("div.gallery");
+
+function f1(){
+  console.log(x);
+  for(var i=0;i<x.length;i++){
+    x[i].classList.add("margin");
+  }
+}
+
+function f2(){
+  f6();
+  x[1].classList.add("margin");
+  x[4].classList.add("margin");
+}
+
+function f3(){
+  f6();
+  x[3].classList.add("margin");
+  x[7].classList.add("margin");
+}
+
+function f4(){
+  f6();
+  x[1].classList.add("margin");
+  x[4].classList.add("margin");
+  x[8].classList.add("margin");
+}
+
+function f5(){
+  f6();
+  x[2].classList.add("margin");
+  x[6].classList.add("margin");
+  x[5].classList.add("margin");
+}
+
+function f6(){
+  for(var i=0;i<x.length;i++){
+    x[i].classList.remove("margin");
+  }
+}
+
+</script>
+
+</html>
